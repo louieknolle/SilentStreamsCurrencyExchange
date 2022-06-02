@@ -11,72 +11,35 @@
     </div>
   <div class="container">
     <h3>Please enter the specific amount and type of currency from the fields below, select the currency you'd like the amount converted to and then submit.</h3>
-    <fieldset>
+    <form>
       <label for="moneyValue">Monetary value:</label>
       <input id="moneyValue" type="number" min="0" required  placeholder="0.00" >
-      <legend>Initial Currency:</legend>
-      <div>
-        <input type="checkbox" value="USD" name="currency">
-        <label for="USD">United States Dollar</label>
-      </div>
-      <div>
-        <input type="checkbox" value="BRL" name="currency">
-        <label for="BRL">Brazilian Real</label>
-      </div>
-      <div>
-        <input type="checkbox" value="EGP" name="currency">
-        <label for="EGP">Egyptian Pound</label>
-      </div>
-      <div>
-        <input type="checkbox" value="CAD" name="currency">
-        <label for="CAD">Canadian Dollar</label>
-      </div>
-      <div>
-        <input type="checkbox" value="ETB" name="currency">
-        <label for="ETB">	Ethiopian Birr</label>
-      </div>
-      <div>
-        <input type="checkbox" value="ISK" name="currency">
-        <label for="ISK">Icelandic Króna</label>
-      </div>
-      <div>
-        <input type="checkbox" value="JPY" name="currency">
-        <label for="JPY">Japanese Yen</label>
-      </div>
-    </fieldset>
-    <fieldset>
-      <label for="moneyValue">Monetary value:</label>
-      <input id="moneyValue" type="number" min="0" required  placeholder="0.00" >
-      <legend>Initial Currency:</legend>
-      <div>
-        <input type="checkbox" value="USD" name="currency">
-        <label for="USD">United States Dollar</label>
-      </div>
-      <div>
-        <input type="checkbox" value="BRL" name="currency">
-        <label for="BRL">Brazilian Real</label>
-      </div>
-      <div>
-        <input type="checkbox" value="EGP" name="currency">
-        <label for="EGP">Egyptian Pound</label>
-      </div>
-      <div>
-        <input type="checkbox" value="CAD" name="currency">
-        <label for="CAD">Canadian Dollar</label>
-      </div>
-      <div>
-        <input type="checkbox" value="ETB" name="currency">
-        <label for="ETB">	Ethiopian Birr</label>
-      </div>
-      <div>
-        <input type="checkbox" value="ISK" name="currency">
-        <label for="ISK">Icelandic Króna</label>
-      </div>
-      <div>
-        <input type="checkbox" value="JPY" name="currency">
-        <label for="JPY">Japanese Yen</label>
-      </div>
-    </fieldset>
+      <label for="currencyBegin">Select initial currency</label>
+      <select required class="formControl" id="currencyBegin">
+        <option disabled selected value> -- select an option -- </option>
+        <option value="USD">United States Dollar</option>
+        <option value="BRL">Brazilian Real</option>
+        <option value="EGP">Egyptian Pound</option>
+        <option value="CAD">Canadian Dollar</option>
+        <option value="ETB">Ethiopian Birr</option>
+        <option value="ISK">Icelandic Króna</option>
+        <option value="JPY">Japanese Yen</option>
+      </select>
+
+      <label for="currencyEnd">Select final currency</label>
+      <select required class="formControl" id="currencyEnd">
+        <option disabled selected value> -- select an option -- </option>
+        <option value="USD">United States Dollar</option>
+        <option value="BRL">Brazilian Real</option>
+        <option value="EGP">Egyptian Pound</option>
+        <option value="CAD">Canadian Dollar</option>
+        <option value="ETB">Ethiopian Birr</option>
+        <option value="ISK">Icelandic Króna</option>
+        <option value="JPY">Japanese Yen</option>
+      </select>
+
+      <button type="button" class="btn-success" id="convertMoney"></button>
+    </form>
   </div>
 </body>
 </html>
