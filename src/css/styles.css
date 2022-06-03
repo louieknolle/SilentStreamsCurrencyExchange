@@ -5,6 +5,14 @@ body {
 
 .jumbotron {
   background-color: #0dc7c7;
-  
+  color: #1c1ca0;
+  text-shadow: #dedee3 2px 2px 3px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,02.), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.title {
+  text-shadow: none;
+  font-size: 22px;
 }
 
