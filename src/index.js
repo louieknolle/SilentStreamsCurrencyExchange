@@ -4,9 +4,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
 import CurrencyService from './currency-service.js';
 
-function emptyText() {
+function emptyInputs() {
   $('#moneyValue').val('');
   $('.showConvertedAmount').text('');
+  $('select').val($('option:disabled'));
 }
 
 function roundToTwo(num) {
@@ -15,9 +16,9 @@ function roundToTwo(num) {
 
 function getMoneyConversion(response) {
   if (response.result === 'success') {
-    $('.showConvertedAmount').text(`Your money is equal to ${roundToTwo(response.conversion_result)} ${response.target_code}.`)
+    $('.showConvertedAmount').text(`Your money is equal to ${roundToTwo(response.conversion_result)} ${response.target_code}.`);
   } else {
-    $('.showConvertedAmount').text(`There was an error in your request: ${response.error-type}`);
+    $('.showConvertedAmount').text(`There was an error in your request: ${response.error}`);
   }
 }
 
@@ -31,7 +32,7 @@ $(document).ready(function() {
     const initialCurrency = $('#currencyBegin').val();
     const finalCurrency = $('#currencyEnd').val();
     const moneyValue = $('#moneyValue').val();
-    emptyText();
+    emptyInputs();
     callExchangeApi(initialCurrency, finalCurrency, moneyValue);
   });
 });
