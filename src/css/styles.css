@@ -9,10 +9,36 @@ body {
   text-shadow: #dedee3 2px 2px 3px;
   border-radius: 5px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,02.), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding-bottom: 5px;
+  padding-top: 10px;
+}
+
+.header {
+  
 }
 
 .title {
   text-shadow: none;
   font-size: 22px;
+  color: #39267e;
+  margin-top: 30px;
+}
+
+.main {
+  background-color: #c6c3c3;
+  opacity: .6;
+  border-radius: 10px;
+  padding: 20px 30px;
+  width: 60%;
+  margin: auto;
+  color: #39267e;
+}
+
+.nextSelect {
+  margin-top: 10px;
+}
+
+.inputNewCurrency {
+  margin-top: 20px;
 }
 
