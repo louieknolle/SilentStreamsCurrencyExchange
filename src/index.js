@@ -18,7 +18,7 @@ function getMoneyConversion(response) {
   if (response.result === 'success') {
     $('.showConvertedAmount').text(`Your money is equal to ${roundToTwo(response.conversion_result)} ${response.target_code}.`);
   } else {
-    $('.showConvertedAmount').text(`There was an error in your request: ${response.error}`);
+    $('.showConvertedAmount').text(`There was an error in your request: ${response}`);
   }
 }
 
