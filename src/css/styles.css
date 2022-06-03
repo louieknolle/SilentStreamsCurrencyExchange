@@ -13,8 +13,8 @@ body {
   padding-top: 10px;
 }
 
-.header {
-  
+label {
+  font-size: 18px;
 }
 
 .title {
@@ -28,9 +28,17 @@ body {
   background-color: #c6c3c38c;
   border-radius: 10px;
   padding: 20px 30px;
-  width: 60%;
+  width: 70%;
   margin: auto;
   color: #39267e;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+.currencyBeginLabel {
+  margin-left: 10px;
 }
 
 .nextSelect {
@@ -39,5 +47,18 @@ body {
 
 .inputNewCurrency {
   margin-top: 20px;
+}
+
+.showConvertedAmount {
+  /* display: none; */
+  background-color: #c6c3c38c;
+  color: #39267e;
+  width: fit-content;
+  margin: auto;
+  border-radius: 5px;
+  margin-top: 20px;
+  text-align: center;
+  padding: 10px 40px;
+  font-size: 22px;
 }
 
