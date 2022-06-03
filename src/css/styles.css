@@ -1,5 +1,10 @@
-/* body {
-  background-color: lightblue;
-} */
+body {
+  width: 80%;
+  margin: auto;
+}
 
-/*  STYLES GO HERE */
+.jumbotron {
+  background-color: #0dc7c7;
+  
+}
+
