@@ -23,20 +23,24 @@ This application utilizes a monetary exchange rate API to convert monetary value
 ## Setup/Installation Requirements
 
 * _Use a command line terminal to clone the repository from Github by inputting ```git clone https://github.com/louieknolle/currencyXchange.git```_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
+* _Install Node.js_
+* _Open the project in VSCode or text editor of choice_
+* _Go to <a>XCHANGEURL</a>, sign up for a free acount and follow account activation instructions to obtain free API key_
+* _Return to the project's parent directory in the terminal and run ```touch .env``` to create an environment file and add the file name (.env) to the ".gitignore" file in VSCode or text editor of choice_
+* _Now store your API key as the value for the API_KEY property: API_KEY:(your API key here without the parens)_
+* _In the terminal again, run the following commands to complete your developer environment_
+  * _```npm install``` to install the webpack dependencies_
+  * _```npm run build``` to launch development environment_
+  * _```npm run start``` to launch live server_
 
-//5. Create an API key:      1. navigate to website: WEBSITE FOR API KEY HERE     2. create an account and follow this link to create an API key: LINK HERE     3. create a file in your root directory called .env     4. add .env to .gitignore list     5. list API key in your .env as          API_KEY:(your API key here w/o parens)
 
 ## Known Bugs
 
-* _Any known issues_
-* _should go here_
+* _No Known Bugs at This Time_
+
 
 ## License
 
-_{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}_
+_Email knollelw@gmail.com with any comments or contributions. This software is licensed under the MIT license_
 
-Copyright (c) _date_ _author name(s)_
+Copyright (c) _2022_ _Louie Knolle_
