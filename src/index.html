@@ -1,51 +1,65 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Currency Exchange</title>
-</head>
-<body>
-  <div class="jumbotron jumbotron-fluid text-center">
-    <div class="container">
-      <h1 class="header">Silent Streams Currency Exchange</h1>
-      <p class="title">Your most current source for monetary exchange rates.</p>
-    </div>
-  </div>
-  <div class="container main">
-    <h3>First enter the monetary value and its currency.</h3>
-    <form>
-      <div class="inputNewCurrency">
-      <label for="moneyValue">Monetary value:</label>
-      <input id="moneyValue" type="number" min="0" required  placeholder="0.00" >
-      <label for="currencyBegin">Currency</label>
-      <select required class="formControl" id="currencyBegin">
-        <option disabled selected value> -- select an option -- </option>
-        <option value="USD">United States Dollar</option>
-        <option value="BRL">Brazilian Real</option>
-        <option value="EGP">Egyptian Pound</option>
-        <option value="CAD">Canadian Dollar</option>
-        <option value="ETB">Ethiopian Birr</option>
-        <option value="ISK">Icelandic Króna</option>
-        <option value="JPY">Japanese Yen</option>
-      </select>
-    </div>
-      <h3 class="nextSelect">Next select the currency you would like it converted to and press "Convert Currency".</h3>
-      <div class="inputNewCurrency">
-        <label for="currencyEnd">Currency</label>
-        <select required class="formControl" id="currencyEnd">
-          <option disabled selected value> -- select an option -- </option>
-          <option value="USD">United States Dollar</option>
-          <option value="BRL">Brazilian Real</option>
-          <option value="EGP">Egyptian Pound</option>
-          <option value="CAD">Canadian Dollar</option>
-          <option value="ETB">Ethiopian Birr</option>
-          <option value="ISK">Icelandic Króna</option>
-          <option value="JPY">Japanese Yen</option>
-        </select>
-        <button type="button" class="btn-success" id="convertMoney">Convert Currency</button>
+  <head>
+    <title>Currency Exchange</title>
+  </head>
+  <body>
+    <div class="jumbotron jumbotron-fluid text-center">
+      <div class="container">
+        <h1 class="header">Silent Streams Currency Exchange</h1>
+        <p class="title">
+          Your most current source for monetary exchange rates.
+        </p>
       </div>
-    </form>
-    <div class="showConvertedAmount"></div>
-  </div>
-</body>
+    </div>
+    <div class="container main">
+      <div class="inputNewCurrency">
+        <form>
+          <h3>First enter the monetary value and its currency.</h3>
+          <label for="moneyValue">Monetary value:</label>
+          <input
+            id="moneyValue"
+            type="number"
+            min="0"
+            required
+            placeholder="0.00"
+          />
+          <label for="currencyBegin">Currency:</label>
+          <select required class="formControl" id="currencyBegin">
+            <option disabled selected value>-- select an option --</option>
+            <option value="USD">United States Dollar</option>
+            <option value="BRL">Brazilian Real</option>
+            <option value="EGP">Egyptian Pound</option>
+            <option value="CAD">Canadian Dollar</option>
+            <option value="ETB">Ethiopian Birr</option>
+            <option value="ISK">Icelandic Króna</option>
+            <option value="JPY">Japanese Yen</option>
+          </select>
+        </form>
+      </div>
+      <div class="selectOutputCurrency">
+        <h3 class="nextSelect">
+          Next select the currency you would like it converted to.
+        </h3>
+        <form action="">
+          <label for="currencyEnd">Currency:</label>
+          <select required class="formControl" id="currencyEnd">
+            <option disabled selected value>-- select an option --</option>
+            <option value="USD">United States Dollar</option>
+            <option value="BRL">Brazilian Real</option>
+            <option value="EGP">Egyptian Pound</option>
+            <option value="CAD">Canadian Dollar</option>
+            <option value="ETB">Ethiopian Birr</option>
+            <option value="ISK">Icelandic Króna</option>
+            <option value="JPY">Japanese Yen</option>
+            <option value="UCV">Unavaible Currency Value</option>
+          </select>
+          <button type="button" class="btn-success" id="convertMoney">
+            Convert Currency
+          </button>
+        </form>
+      </div>
+      <div class="showConvertedAmount">sample sample sample sample</div>
+    </div>
+  </body>
 </html>
-
