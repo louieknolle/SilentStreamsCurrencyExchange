@@ -42,6 +42,7 @@ $(document).ready(function() {
     const moneyValue = $('#moneyValue').val();
     emptyInputs();
     callExchangeApi(initialCurrency, finalCurrency, moneyValue);
+    $('.showConvertedAmount').show();
   });
 });
 
