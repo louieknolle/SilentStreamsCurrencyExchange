@@ -23,7 +23,15 @@ function getMoneyConversion(response) {
 }
 
 async function callExchangeApi(initialCurrency, finalCurrency, moneyValue) {
-  const response = await CurrencyService.convertCurrency(initialCurrency, finalCurrency, moneyValue);
+  let response = null;
+
+  if (['USD', 'BRL', 'EGP', 'CAD', 'ETB', 'ISK', 'JPY'].includes(finalCurrency)) {
+    response = await CurrencyService.convertCurrency(initialCurrency, finalCurrency, moneyValue);
+  }
+  else {
+    response = "Currency unavail";
+  }
+  
   getMoneyConversion(response);
 }
 
