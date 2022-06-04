@@ -6,8 +6,6 @@ export default class CurrencyService {
       if(!response.ok) {
         throw Error(response.result);
       }
-
-      // if unavailable currency throw 'currency bad' msg
       
       return await response.json();
     } catch (error) {
