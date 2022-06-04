@@ -25,7 +25,7 @@ This application utilizes a monetary exchange rate API to convert monetary value
 * _Use a command line terminal to clone the repository from Github by inputting ```git clone https://github.com/louieknolle/currencyXchange.git```_
 * _Install Node.js_
 * _Open the project in VSCode or text editor of choice_
-* _Go to <a>XCHANGEURL</a>, sign up for a free acount and follow account activation instructions to obtain free API key_
+* _Go to https://www.exchangerate-api.com/, sign up for a free acount and follow account activation instructions to obtain free API key_
 * _Return to the project's parent directory in the terminal and run ```touch .env``` to create an environment file and add the file name (.env) to the ".gitignore" file in VSCode or text editor of choice_
 * _Now store your API key as the value for the API_KEY property: API_KEY:(your API key here without the parens)_
 * _In the terminal again, run the following commands to complete your developer environment_
