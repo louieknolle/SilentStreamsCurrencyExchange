@@ -1,10 +1,11 @@
 body {
   width: 80%;
   margin: auto;
+  background-image: url(https://cache.desktopnexus.com/cropped-wallpapers/2497/2497817-1920x1080-[DesktopNexus.com].jpg?st=tOb2ta6joye5BM4VnBpfdw&e=1654308765);
 }
 
 .jumbotron {
-  background-color: #0dc7c7;
+  background-color: #c6c3c38c;
   color: #1c1ca0;
   text-shadow: #dedee3 2px 2px 3px;
   border-radius: 5px;
@@ -20,7 +21,7 @@ label {
 .title {
   text-shadow: none;
   font-size: 22px;
-  color: #39267e;
+  color: #ffffff;
   margin-top: 30px;
 }
 
@@ -28,13 +29,16 @@ label {
   background-color: #c6c3c38c;
   border-radius: 10px;
   padding: 20px 30px;
-  width: 70%;
+  width: 50%;
   margin: auto;
-  color: #39267e;
+  color:#1c1ca0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 h3 {
-  font-size: 24px;
+  font-size: 28px;
 }
 
 .currencyBeginLabel {
@@ -50,15 +54,24 @@ h3 {
 }
 
 .showConvertedAmount {
-  /* display: none; */
+  display: none;
   background-color: #c6c3c38c;
-  color: #39267e;
+  color:#1c1ca0;
   width: fit-content;
   margin: auto;
   border-radius: 5px;
   margin-top: 20px;
   text-align: center;
   padding: 10px 40px;
-  font-size: 22px;
+  font-size: 24px;
+}
+
+label {
+  font-style: oblique;
+  font-weight: bold;
+}
+
+#convertMoney {
+  margin-left: 10px;
 }
 
